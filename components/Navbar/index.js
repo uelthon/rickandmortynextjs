@@ -12,8 +12,8 @@ export default function Navbar ({ children }) {
         </div>
         <div className='flex-none gap-2'>
           <div className='flex items-center gap-2 mr-1'>
-            <Link href='/personajes'>Personajes</Link>
-            <Link href='/about'>About</Link>
+            <Link className='btn btn-ghost normal-case text-base' href='/personajes'>Personajes</Link>
+            <Link className='btn btn-ghost normal-case text-base' href='/about'>About</Link>
           </div>
           <div className='form-control'>
             <input type='text' placeholder='Search' className='input input-bordered' />

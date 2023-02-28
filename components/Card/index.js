@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import FavoritesToggle from './FavoritesToggle'
@@ -6,7 +7,7 @@ export default function Card ({ image, name, status, gender, id }) {
   return (
     <div className='card card-compact bg-base-100 shadow-xl'>
       <figure>
-        <img src={image} width='100%' alt='Shoes' />
+        <Image src={image} width={300} height={300} alt='Shoes' loading='lazy' />
       </figure>
       <div className='card-body'>
         <Link className='card-title' href={`/personaje/${id}`}>{name}</Link>
